@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sein Hilamovi Ramadhan — Creative Developer &amp; Art Director</title>
+  <meta name="description" content="Portfolio of Sein Hilamovi Ramadhan. Best Graduate 24/25 at Thursina IIBS, TSA Language Division Coordinator, Programmer at camply.id.">
+  <meta name="author" content="Sein Hilamovi Ramadhan">
+  <meta property="og:title" content="Sein Hilamovi Ramadhan — Creative Developer &amp; Art Director">
+  <meta property="og:description" content="Building at the intersection of code and art.">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== SCROLL INDICATOR (left-side vertical bars) ===== -->
+  <nav class="scroll-indicator" aria-label="Section navigation">
+    <a class="scroll-indicator__item is-active" href="#hero" aria-label="Hero"><span class="scroll-indicator__bar"></span></a>
+    <a class="scroll-indicator__item" href="#manifesto" aria-label="Manifesto"><span class="scroll-indicator__bar"></span></a>
+    <a class="scroll-indicator__item" href="#trajectory" aria-label="Journey"><span class="scroll-indicator__bar"></span></a>
+    <a class="scroll-indicator__item" href="#toolkit" aria-label="Toolkit"><span class="scroll-indicator__bar"></span></a>
+    <a class="scroll-indicator__item" href="#projects" aria-label="Projects"><span class="scroll-indicator__bar"></span></a>
+    <a class="scroll-indicator__item" href="#contact" aria-label="Contact"><span class="scroll-indicator__bar"></span></a>
+  </nav>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="site-header">
+    <a href="#hero" class="header__logo" aria-label="Back to top">SHR</a>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle__input" aria-label="Toggle navigation">
+    <label for="menu-toggle" class="menu-toggle__label" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="header__nav" aria-label="Primary Navigation">
+      <a href="#trajectory" class="header__link">journey</a>
+      <a href="#toolkit" class="header__link">toolkit</a>
+      <a href="#projects" class="header__link">projects</a>
+      <a href="#contact" class="header__link">contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== 1. HERO ===== -->
+    <section class="hero" id="hero">
+      <div class="hero__content">
+        <p class="hero__badge">Best Graduate 24/25 &middot; Thursina IIBS</p>
+        <h1 class="hero__title">
+          <span class="hero__line">Sein</span>
+          <span class="hero__line">Hilamovi</span>
+          <span class="hero__line">Ramadhan</span>
+        </h1>
+        <p class="hero__subtitle">Creative Developer &amp; Art Director</p>
+      </div>
+      <a href="#manifesto" class="hero__scroll" aria-label="Scroll down">
+        <span class="hero__scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- ===== 2. MANIFESTO ===== -->
+    <section class="manifesto" id="manifesto">
+      <div class="manifesto__inner">
+        <p class="manifesto__text">
+          I create experiences at the intersection of code and art.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== 3. TRAJECTORY (Pinned scroll-driven sentences + bands) ===== -->
+    <section class="trajectory" id="trajectory">
+      <div class="trajectory__pin">
+
+        <!-- Colored side bands -->
+        <div class="trajectory__bands" aria-hidden="true">
+          <div class="trajectory__band trajectory__band--left"></div>
+          <div class="trajectory__band trajectory__band--right"></div>
+        </div>
+
+        <!-- Sentences (only one visible at a time) -->
+        <div class="trajectory__center">
+          <div class="trajectory__sentence" data-step="0">First</div>
+          <div class="trajectory__sentence trajectory__sentence--large" data-step="1">
+            <span>student</span><br><span>and scholar.</span>
+          </div>
+          <div class="trajectory__sentence" data-step="2">Then</div>
+          <div class="trajectory__sentence trajectory__sentence--large" data-step="3">
+            <span>code</span><br><span>and logic.</span>
+          </div>
+          <div class="trajectory__sentence" data-step="4">Now</div>
+          <div class="trajectory__sentence trajectory__sentence--bridge" data-step="5">I bridge</div>
+          <div class="trajectory__sentence trajectory__sentence--large trajectory__sentence--final" data-step="6">the two.</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== 4. TOOLKIT (Dark bg, card fan carousel) ===== -->
+    <section class="toolkit" id="toolkit">
+      <div class="toolkit__pin">
+
+        <h2 class="toolkit__title">Toolkit</h2>
+        <div class="toolkit__subtitle-wrap">
+          <h3 class="toolkit__subtitle toolkit__subtitle--code">Code</h3>
+          <h3 class="toolkit__subtitle toolkit__subtitle--design">Design &amp; Editing</h3>
+        </div>
+
+        <div class="toolkit__carousel">
+          <!-- Code cards -->
+          <div class="toolkit-card toolkit-card--js" data-deck="code">
+            <span class="toolkit-card__name">Java<br>script</span>
+            <span class="toolkit-card__label">Language</span>
+          </div>
+          <div class="toolkit-card toolkit-card--react" data-deck="code">
+            <span class="toolkit-card__name">React</span>
+            <span class="toolkit-card__label">Framework</span>
+          </div>
+          <div class="toolkit-card toolkit-card--css" data-deck="code">
+            <span class="toolkit-card__name">CSS</span>
+            <span class="toolkit-card__label">Styling</span>
+          </div>
+          <div class="toolkit-card toolkit-card--ts" data-deck="code">
+            <span class="toolkit-card__name">Type<br>Script</span>
+            <span class="toolkit-card__label">Typed language</span>
+          </div>
+
+          <!-- Design cards -->
+          <div class="toolkit-card toolkit-card--ibis" data-deck="design">
+            <span class="toolkit-card__name">ibis<br>Paint X</span>
+            <span class="toolkit-card__label">Illustration</span>
+          </div>
+          <div class="toolkit-card toolkit-card--capcut" data-deck="design">
+            <span class="toolkit-card__name">Cap<br>Cut</span>
+            <span class="toolkit-card__label">Video editing</span>
+          </div>
+          <div class="toolkit-card toolkit-card--alight" data-deck="design">
+            <span class="toolkit-card__name">Alight<br>Motion</span>
+            <span class="toolkit-card__label">Motion graphics</span>
+          </div>
+          <div class="toolkit-card toolkit-card--ps" data-deck="design">
+            <span class="toolkit-card__name">Photo<br>shop</span>
+            <span class="toolkit-card__label">Asset design</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== 5. PROJECTS ===== -->
+    <section class="projects" id="projects">
+      <div class="projects__inner">
+        <h2 class="projects__title">Projects</h2>
+
+        <nav class="projects__list" aria-label="Projects">
+
+          <a class="projects__link" href="#">
+            <span class="projects__name">
+              <span>a</span><!--
+              --><span class="projects__reveal">
+                <span class="projects__dot" style="background:#ffd700;"></span>
+                <span class="projects__dot" style="background:#873600;"></span>
+                <span class="projects__dot" style="background:#112b66;"></span>
+                <span class="projects__dot" style="background:#3a110b;"></span>
+              </span><!--
+              --><span>nimations</span>
+            </span>
+          </a>
+
+          <a class="projects__link" href="#">
+            <span class="projects__name">drawing</span>
+          </a>
+
+          <a class="projects__link" href="#">
+            <span class="projects__name">web</span>
+          </a>
+
+        </nav>
+      </div>
+    </section>
+
+    <!-- ===== 6. FOOTER / CONTACT ===== -->
+    <footer class="footer" id="contact">
+      <div class="footer__inner">
+
+        <div class="footer__main">
+          <p class="footer__headline">
+            <span>Open to joining</span><br>
+            <span>a creative team</span><br>
+            <span class="footer__date">Apprenticeship &middot; 2025</span>
+          </p>
+          <div class="footer__meta">
+            <p>&copy; 2025 Sein Hilamovi Ramadhan</p>
+          </div>
+        </div>
+
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <div class="footer__group">
+            <p class="footer__group-title">Explore</p>
+            <a href="#trajectory" class="footer__link">Journey</a>
+            <a href="#toolkit" class="footer__link">Toolkit</a>
+            <a href="#projects" class="footer__link">Projects</a>
+            <a href="#contact" class="footer__link">Contact</a>
+          </div>
+          <div class="footer__group">
+            <p class="footer__group-title">Connect</p>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer__link">GitHub</a>
+            <a href="mailto:contact@seinhilamovi.dev" class="footer__link">Email</a>
+          </div>
+        </nav>
+
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- GSAP + ScrollTrigger CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
