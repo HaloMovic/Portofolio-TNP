@@ -1,4 +1,5 @@
 require('dotenv').config();
+const path = require('path');
 const express = require('express');
 
 const app = express();
@@ -28,7 +29,7 @@ ${Object.entries(CATEGORIES).map(([k, v]) => `- ${k}: ${v}`).join('\n')}
 Respond with JSON only: {"category": "<one of the keys above>"}`;
 
 app.use(express.json({ limit: '4kb' }));
-app.use(express.static(__dirname, { dotfiles: 'deny' }));
+app.use(express.static(path.join(__dirname, 'public'), { dotfiles: 'deny' }));
 
 app.post('/api/classify', async (req, res) => {
   const message = String(req.body?.message ?? '').trim().slice(0, 300);
